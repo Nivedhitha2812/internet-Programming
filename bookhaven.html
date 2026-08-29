@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BookHaven</title>
+<style>
+body{font-family:Arial;margin:0;background:#f8f5f0}
+header{background:#6b4226;color:white;text-align:center;padding:25px}
+nav{background:#3e2723;padding:15px;text-align:center}
+nav a{color:white;margin:15px;text-decoration:none}
+.container{width:90%;margin:auto}
+.books{display:flex;gap:20px;flex-wrap:wrap}
+.book{background:white;width:220px;padding:15px;text-align:center;
+      box-shadow:0 2px 8px #aaa;border-radius:8px}
+.book img{width:150px;height:190px;background:#ddd}
+button{background:#6b4226;color:white;border:0;padding:10px}
+input{padding:12px;width:70%}
+</style>
+</head>
+<body>
+
+<header>
+<h1>📚 BookHaven</h1>
+<p>Your Online Bookstore</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#catalog">Catalog</a>
+<a href="#about">About Us</a>
+<a href="#contact">Contact</a>
+<a href="#faq">FAQs</a>
+<a href="#">Cart 🛒</a>
+</nav>
+
+<div class="container">
+
+<h2>Search Books</h2>
+<input type="text" placeholder="Search by title or author">
+<button>Search</button>
+
+<h2 id="catalog">Featured Books</h2>
+<div class="books">
+
+<div class="book">
+<img src="" alt="Book Cover">
+<h3>Web Development</h3>
+<p>Author: John Smith</p>
+<p>₹499</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="book">
+<img src="" alt="Book Cover">
+<h3>Python Programming</h3>
+<p>Author: David Lee</p>
+<p>₹599</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="book">
+<img src="" alt="Book Cover">
+<h3>Database Systems</h3>
+<p>Author: Robert Brown</p>
+<p>₹450</p>
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+<section id="about">
+<h2>About Us</h2>
+<p>BookHaven provides quality books for students, professionals and book lovers.</p>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<input type="text" placeholder="Your Name"><br>
+<input type="email" placeholder="Email"><br>
+<textarea placeholder="Your Message"></textarea><br>
+<button>Send Message</button>
+</section>
+
+<section id="faq">
+<h2>FAQs</h2>
+<p><b>How can I return a book?</b> Contact customer support within 7 days.</p>
+<p><b>Do you provide delivery?</b> Yes, delivery is available.</p>
+</section>
+
+</div>
+</body>
+</html>

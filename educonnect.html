@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduConnect</title>
+    <style>
+        body { font-family: Arial; margin: 0; background: #f4f7fb; }
+        header { background: #2563eb; color: white; padding: 20px; text-align: center; }
+        nav { background: #1e40af; padding: 12px; text-align: center; }
+        nav a { color: white; margin: 15px; text-decoration: none; }
+        .container { width: 85%; margin: 30px auto; }
+        .card { background: white; padding: 20px; margin: 15px 0;
+                border-radius: 10px; box-shadow: 0 2px 8px #ccc; }
+        input, select, button { padding: 10px; margin: 7px; width: 90%; }
+        button { background: #2563eb; color: white; border: 0; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EduConnect</h1>
+    <p>Learn Anywhere, Anytime</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#courses">Course Catalog</a>
+    <a href="#student">Student Registration</a>
+    <a href="#teacher">Teacher Registration</a>
+</nav>
+
+<div class="container">
+
+<section id="courses" class="card">
+    <h2>Course Catalog</h2>
+    <p>Browse and enroll in available courses.</p>
+    <select>
+        <option>Web Development</option>
+        <option>Python Programming</option>
+        <option>Database Management</option>
+        <option>Artificial Intelligence</option>
+    </select>
+    <button>Enroll Now</button>
+</section>
+
+<section id="student" class="card">
+    <h2>Student Registration</h2>
+    <input type="text" placeholder="Student Name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <select>
+        <option>Select Subject</option>
+        <option>Web Development</option>
+        <option>Python</option>
+        <option>Database</option>
+    </select>
+    <button>Register Student</button>
+</section>
+
+<section id="teacher" class="card">
+    <h2>Teacher Registration</h2>
+    <input type="text" placeholder="Teacher Name">
+    <input type="email" placeholder="Email">
+    <input type="text" placeholder="Qualification">
+    <input type="text" placeholder="Subject">
+    <button>Register Teacher</button>
+</section>
+
+<section class="card">
+    <h2>Time Management</h2>
+    <p>Today's Classes</p>
+    <ul>
+        <li>10:00 AM - Web Development</li>
+        <li>12:00 PM - Python Programming</li>
+        <li>03:00 PM - Database Management</li>
+    </ul>
+</section>
+
+</div>
+</body>
+</html>

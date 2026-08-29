@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Painting Review System</title>
+<style>
+body{font-family:Arial;background:#faf5ff;margin:0}
+header{background:#581c87;color:white;text-align:center;padding:30px}
+.container{width:80%;margin:30px auto}
+.card{background:white;padding:25px;margin:20px 0;
+      border-radius:10px;box-shadow:0 2px 8px #aaa}
+input,select,textarea{padding:10px;margin:7px;width:90%}
+button{background:#7e22ce;color:white;padding:10px;border:0}
+.review{background:#f3e8ff;padding:15px;margin:10px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🎨 Painting Review System</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Owner Registration</h2>
+<input type="text" placeholder="Owner Name">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+<input type="text" placeholder="Painting Name">
+
+<select>
+<option>7 Days Package</option>
+<option>15 Days Package</option>
+<option>30 Days Package</option>
+</select>
+
+<button>Register & Pay</button>
+</div>
+
+<div class="card">
+<h2>Current Painting</h2>
+<h3>Sunset Landscape</h3>
+<p>Average Rating: ⭐⭐⭐⭐☆ 4.2/5</p>
+<p>Available for customer reviews until 30-08-2026.</p>
+</div>
+
+<div class="card">
+<h2>Customer Review</h2>
+<select>
+<option>5 Stars</option>
+<option>4 Stars</option>
+<option>3 Stars</option>
+<option>2 Stars</option>
+<option>1 Star</option>
+</select>
+<textarea placeholder="Write your review"></textarea>
+<button>Submit Review</button>
+</div>
+
+<div class="card">
+<h2>Previous Reviews</h2>
+
+<div class="review">
+<b>Positive:</b> Beautiful colors and excellent composition.
+</div>
+
+<div class="review">
+<b>Positive:</b> Very attractive painting.
+</div>
+
+<div class="review">
+<b>Negative:</b> The painting could have better lighting.
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

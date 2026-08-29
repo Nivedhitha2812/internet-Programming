@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Phone Bill Payment</title>
+<style>
+body{font-family:Arial;background:#f0fdfa;margin:0}
+header{background:#0f766e;color:white;text-align:center;padding:25px}
+.container{width:500px;max-width:90%;margin:30px auto}
+.card{background:white;padding:25px;margin:20px 0;
+      border-radius:10px;box-shadow:0 2px 8px #aaa}
+input,select{width:90%;padding:12px;margin:8px}
+button{width:95%;padding:12px;background:#0f766e;color:white;border:0}
+</style>
+</head>
+<body>
+
+<header>
+<h1>📱 Phone Bill Payment</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Customer Registration</h2>
+<input type="text" placeholder="Customer Name">
+<input type="email" placeholder="Email">
+<input type="tel" placeholder="Mobile Number">
+<input type="password" placeholder="Password">
+<button>Register</button>
+</div>
+
+<div class="card">
+<h2>Customer Login</h2>
+<input type="tel" placeholder="Mobile Number">
+<input type="password" placeholder="Password">
+<button>Login</button>
+</div>
+
+<div class="card">
+<h2>Monthly Bill</h2>
+<p><b>Mobile Number:</b> 9876543210</p>
+<p><b>Billing Period:</b> 01-08-2026 to 31-08-2026</p>
+<p><b>Due Date:</b> 30-08-2026</p>
+<p><b>Outstanding Amount:</b> ₹599</p>
+<p><b>Late Fine:</b> ₹10 per day</p>
+
+<h3>Payment Method</h3>
+
+<select>
+<option>Credit Card</option>
+<option>Debit Card</option>
+<option>Net Banking</option>
+<option>Mobile Wallet</option>
+</select>
+
+<input type="number" placeholder="Enter Amount">
+
+<button>Pay Bill</button>
+</div>
+
+<div class="card">
+<h2>Payment History</h2>
+<table border="1" cellpadding="10" width="100%">
+<tr>
+<th>Date</th>
+<th>Amount</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>30-07-2026</td>
+<td>₹599</td>
+<td>Paid</td>
+</tr>
+<tr>
+<td>30-06-2026</td>
+<td>₹549</td>
+<td>Paid</td>
+</tr>
+</table>
+</div>
+
+</div>
+</body>
+</html>

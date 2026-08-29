@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Income Tax Calculator</title>
+<style>
+body{font-family:Arial;background:#eff6ff;margin:0}
+header{background:#1d4ed8;color:white;text-align:center;padding:25px}
+.container{width:500px;max-width:90%;margin:30px auto}
+.card{background:white;padding:25px;border-radius:10px;
+      box-shadow:0 2px 8px #aaa}
+input{width:90%;padding:12px;margin:8px}
+button{padding:12px;width:95%;background:#1d4ed8;color:white;border:0}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Income Tax Calculator</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Employee Details</h2>
+
+<input type="number" id="salary" placeholder="Monthly Gross Pay">
+<input type="number" id="hra" placeholder="Monthly HRA">
+<input type="number" id="pension" placeholder="Monthly Pension">
+<input type="number" id="insurance" placeholder="Monthly Health Insurance">
+
+<button onclick="calculateTax()">Calculate Tax</button>
+
+<h2 id="result"></h2>
+
+</div>
+
+</div>
+
+<script>
+function calculateTax() {
+
+    let salary = Number(document.getElementById("salary").value);
+    let hra = Number(document.getElementById("hra").value);
+    let pension = Number(document.getElementById("pension").value);
+    let insurance = Number(document.getElementById("insurance").value);
+
+    let annualSalary = salary * 12;
+    let annualHRA = hra * 12;
+    let annualPension = Math.min(pension * 12, 150000);
+    let annualInsurance = insurance * 12;
+
+    let taxable = annualSalary - annualHRA - 50000
+                  - annualPension - annualInsurance;
+
+    if (taxable < 0) taxable = 0;
+
+    let tax = 0;
+
+    if (taxable <= 250000) {
+        tax = 0;
+    }
+    else if (taxable <= 500000) {
+        tax = (taxable - 250000) * 0.05;
+    }
+    else if (taxable <= 1000000) {
+        tax = 12500 + (taxable - 500000) * 0.20;
+    }
+    else {
+        tax = 112500 + (taxable - 1000000) * 0.30;
+    }
+
+    document.getElementById("result").innerHTML =
+        "Net Taxable Income: ₹" + taxable.toFixed(2) +
+        "<br>Tax Payable: ₹" + tax.toFixed(2);
+}
+</script>
+
+</body>
+</html>

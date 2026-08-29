@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Digital Recipe Book</title>
+<style>
+body{font-family:Arial;margin:0;background:#fff7ed}
+header{background:#ea580c;color:white;text-align:center;padding:30px}
+nav{background:#9a3412;padding:15px;text-align:center}
+nav a{color:white;margin:15px;text-decoration:none}
+.container{width:85%;margin:auto}
+.recipe{background:white;padding:25px;margin:20px 0;border-radius:10px;
+        box-shadow:0 2px 8px #ccc}
+input,select{padding:10px;margin:8px}
+button{background:#ea580c;color:white;border:0;padding:10px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🍳 Digital Recipe Book</h1>
+<p>Discover, Cook and Share</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#recipes">Recipes</a>
+<a href="#planner">Meal Planner</a>
+<a href="#account">My Account</a>
+</nav>
+
+<div class="container">
+
+<h2>Search Recipes</h2>
+<input type="text" placeholder="Search recipe or ingredient">
+<select>
+<option>All Categories</option>
+<option>Vegetarian</option>
+<option>Non-Vegetarian</option>
+<option>Dessert</option>
+</select>
+<button>Search</button>
+
+<section id="recipes">
+
+<div class="recipe">
+<h2>Vegetable Pasta</h2>
+<p><b>Preparation Time:</b> 30 minutes</p>
+<p><b>Servings:</b> 2</p>
+
+<h3>Ingredients</h3>
+<ul>
+<li>200g Pasta</li>
+<li>1 Tomato</li>
+<li>1 Onion</li>
+<li>100g Mixed Vegetables</li>
+<li>Salt and Pepper</li>
+</ul>
+
+<h3>Instructions</h3>
+<ol>
+<li>Boil the pasta.</li>
+<li>Chop the vegetables.</li>
+<li>Cook vegetables in a pan.</li>
+<li>Add pasta and seasoning.</li>
+<li>Serve hot.</li>
+</ol>
+
+<button>⭐ Rate Recipe</button>
+<button>Print Recipe</button>
+</div>
+
+</section>
+
+<section id="planner">
+<h2>Weekly Meal Planner</h2>
+<table border="1" cellpadding="12">
+<tr><th>Day</th><th>Meal</th></tr>
+<tr><td>Monday</td><td>Vegetable Pasta</td></tr>
+<tr><td>Tuesday</td><td>Vegetable Rice</td></tr>
+<tr><td>Wednesday</td><td>Paneer Curry</td></tr>
+<tr><td>Thursday</td><td>Soup</td></tr>
+</table>
+</section>
+
+</div>
+</body>
+</html>
